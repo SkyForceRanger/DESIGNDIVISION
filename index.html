@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="css.css" rel="stylesheet" type="text/css">
+        
+        <meta charset="UTF-8">
+        
+        <title>DesignDivision</title> 
+        
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            const buttons = document.querySelectorAll('a');
+            buttons.forEach(btn=> {
+                btn.addEventListener('click', function(e)  {
+                    let x = e.clientX - e.target.offsetLeft;
+                    let y = e.clientY - e.target.offsetTop;
+                    
+                    Let ripples = document.createElement('span');
+                    ripples.style.left = x + 'px'
+                    ripples.style.top = y + 'px'
+                    this.appendChild(ripples);
+                })
+            })
+        </script>
+        <image class="image" src="http://gg.gg/ls3ar" height="200px">
+        </image>
+        
+        <p id="welcome">ДОБРО ПОЖАЛОВАТЬ В<br> DESIGN DIVISION 
+        </p>
+        
+        <a class="button1" href="https://t.me/maybe_noone">ТЕЛЕГРАМ АДМИНСТРАТОРА</a>
+        
+        <a class="button2" href="https://t.me/DesignDivision">НАШ ТЕЛЕГРАМ КАНАЛ</a>
+        
+        <div>
+        <image class="telegram" src="http://gg.gg/Telegramicon" height="50px" href="https://t.me/maybe_noone"></image>
+        </div>
+        
+    </body>
+</html>
